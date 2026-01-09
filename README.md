@@ -16,17 +16,23 @@ Students have access to the Colab Pro version for free: (https://colab.research.
 Once there, click on "Github" on the left panel, and then put your github username in the top box.  
 Make sure "include private repos" is checked.  
 You may need to follow instructions to link your Colab account with your github account.  
-Once you do, you should be able to click on the box below "Repository" and see your fork of `phys152_2025`, and the available notebooks in the list at the bottom.
+Once you do, you should be able to click on the box below "Repository" and see your fork of `phys152_2026`, and the available notebooks in the list at the bottom.
 
-Work that you do in the Colab session will disappear the next time you open Colab unless you save it to your github repo.  Go to "File/Save" and make sure it says "Save in Github" at the top.  Enter an appropriate commit message and click "OK".  Note: after you do this, check your fork in github to see that the new content is there!  If not, of if there's a problem saving, then make sure to download  your content (assuming you want to keep it) so you don't lose your work.
+Work that you do in the Colab session will disappear the next time you open Colab unless you save it to your github repo.  
+Go to "File/Save" and make sure it says "Save in Github" at the top.  
+Enter an appropriate commit message and click "OK".  
+Note: after you do this, check your fork in github to see that the new content is there!  
+If not, of if there's a problem saving, then make sure to download  your content (assuming you want to keep it) so you don't lose your work.
 
 ## Using Jupyter
 
-When using Jupyter, you'll first need to get the course content onto the filesystem of whatever computer you're using to run Jupyter.  The best way to do this is by using SSH keys to access your Jupyter fork.
+When using Jupyter, you'll first need to get the course content onto the filesystem of whatever computer you're using to run Jupyter.  
+The best way to do this is by using SSH keys to access your Jupyter fork.
 
 ### Generating SSH keys to work with github (for use in Jupyter servers or your laptop)
 
-First, we'll generate ssh keys on our jupyter server.  (If you're using colab, then there's a way to connect colab directly to your github repo!)
+First, we'll generate ssh keys on our jupyter server.  
+(If you're using colab, then there's a way to connect colab directly to your github repo!)
 1. Sign in to the Jupyter server
 2. Open a terminal
 3. enter the command `ssh-keygen -t rsa`
@@ -56,15 +62,20 @@ That will create a directory in your Jupyter area that has your fork.
 
 ### Getting changes from upstream
 
-On the git web page for your fork, if you are missing updates from upstream then you should see a link called "Sync fork" to update your fork with the upstream changes.  You can follow that link to update from upstream.  You may see a message that says your fork is ahead of the upstream repository by some number of commits, but you should still be able to "Update branch" from upstream despite this warning.
+On the git web page for your fork, if you are missing updates from upstream then you should see a link called "Sync fork" to update your fork with the upstream changes.  
+You can follow that link to update from upstream.  
+You may see a message that says your fork is ahead of the upstream repository by some number of commits, but you should still be able to "Update branch" from upstream despite this warning.
 
-However, that won't update your local cloned repository on your Jupyter server.  To do that, you will need to go into a terminal on the Jupyter server and run:
+However, that won't update your local cloned repository on your Jupyter server.  
+To do that, you will need to go into a terminal on the Jupyter server and run:
 
 ```
 git pull
 ```
 
-to get the changes from the server.  If you have changes that you've made to your own fork on your Jupyter server, then git may complain, in which case you should first clear the outputs from the Lecture notebooks and see if that helps.  If you have other changes even when the lecture notes changes are cleared, then commit them:
+to get the changes from the server.  
+If you have changes that you've made to your own fork on your Jupyter server, then git may complain, in which case you should first clear the outputs from the Lecture notebooks and see if that helps.  I
+f you have other changes even when the lecture notes changes are cleared, then commit them:
 
 ```
 git add <file that changed>
