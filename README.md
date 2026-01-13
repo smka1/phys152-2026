@@ -15,7 +15,7 @@ Students have access to the Colab Pro version for free: (https://colab.research.
 Once there, click on "Github" on the left panel, and then put your github username in the top box.
 Make sure "include private repos" is checked.
 You may need to follow instructions to link your Colab account with your github account.
-Once you do, you should be able to click on the box below "Repository" and see your fork of `phys152_2026`, and the available notebooks in the list at the bottom.
+Once you do, you should be able to click on the box below "Repository" and see your fork of `phys152-2026`, and the available notebooks in the list at the bottom.
 
 Work that you do in the Colab session will disappear the next time you open Colab unless you save it to your github repo.
 Go to "File/Save" and make sure it says "Save in Github" at the top.
